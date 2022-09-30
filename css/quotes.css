@@ -1,0 +1,15 @@
+.quotes {
+  height: 900px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.quotes .aboutPerson {
+  max-width: 676px;
+  height: 150px;
+  background-color: aqua;
+}
+.quotes .aboutPerson .personImage {
+  width: 250px;
+  height: 150px;
+  background-color: bisque;
+}

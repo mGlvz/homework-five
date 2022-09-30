@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.site-container {
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+nav {
+  position: fixed;
+  height: 90px;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: black;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  color: black;
+  font-family: GillSans;
+  background-image: url(../images/logo/logo-black.png);
+}
+nav .links {
+  height: 42px;
+  width: 550px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav .links .line {
+  color: #79ADDC;
+}
+nav .links a {
+  color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-family: GillSans;
+  font-size: 15px;
+}
+
+.about {
+  height: 500px;
+  width: 100%;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .about-container {
+  height: 195px;
+  width: 981px;
+  margin-bottom: 100px;
+}
+.about .about-container .about-title {
+  height: 63px;
+  width: 246px;
+  font-size: 60px;
+  font-family: GillSans;
+  border-bottom: 2px solid;
+  border-color: black;
+}
+.about .about-container .about-text {
+  height: 96px;
+  width: 981px;
+  font-size: 16px;
+  font-family: GillSans;
+  margin-top: 36px;
+}
+
+.quotes {
+  height: 500px;
+  width: 100%;
+}
+.quotes .quotes-title {
+  height: 80px;
+  width: 350px;
+  margin-left: 60px;
+}
+.quotes .quotes-title h1 {
+  font-size: 40px;
+  font-family: GillSans;
+  border-bottom: 2px solid;
+  border-color: black;
+}
+.quotes .aboutPerson {
+  position: relative;
+  max-width: 676px;
+  height: 150px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+}
+.quotes .aboutPerson .personImage {
+  width: 250px;
+  min-height: 150px;
+  background-color: bisque;
+  margin-right: 21px;
+}
+.quotes .aboutPerson .personImage img {
+  min-height: 150px;
+  width: 250px;
+}
+.quotes .aboutPerson .about-quote {
+  width: 385px;
+  font-family: GillSans;
+}
+.quotes .aboutPerson .author {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #79ADDC;
+  font-family: GillSans;
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutPerson {
+    display: block;
+  }
+  .aboutPerson .personImage {
+    margin-bottom: 20px;
+  }
+}
+footer {
+  height: 100px;
+  width: 1280;
+  background-color: #79ADDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .logo {
+  width: 92px;
+  height: 42px;
+  color: white;
+  font-family: GillSans;
+  background-image: url(../images/logo/logo-white.png);
+}
+footer .copyright {
+  color: white;
+  font-size: 12px;
+  font-family: GillSans;
+}
+footer .social-icons {
+  height: 42px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: aqua;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
